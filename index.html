@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Baseball Nine — v2 (Cartoony)</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="ui">
+  <h1>Baseball Nine v2 — Cartoony</h1>
+  <div id="topbar">
+    <div id="score">0 - 0</div>
+    <div id="inning">Inning: 1 (Top)</div>
+    <div id="outs">Outs: 0</div>
+    <div id="strikes">Strikes: 0</div>
+  </div>
+
+  <div id="gameArea">
+    <canvas id="field" width="1000" height="620"></canvas>
+    <aside id="side">
+      <div class="panel">
+        <label>Mode</label>
+        <select id="mode">
+          <option value="game">Full Game</option>
+          <option value="hr">Home Run Derby</option>
+        </select>
+      </div>
+
+      <div class="panel">
+        <button id="start">Start</button>
+        <button id="pitch" disabled>Pitch (CPU)</button>
+        <button id="hit" disabled>HIT</button>
+        <button id="reset">Reset</button>
+      </div>
+
+      <div class="panel">
+        <label>Controls</label>
+        <p>Use the joystick (or arrow keys) to move your contact dot. Press <strong>HIT</strong> or spacebar to swing.</p>
+      </div>
+
+      <div class="panel" id="log"></div>
+    </aside>
+  </div>
+
+  <div id="joystick">
+    <div id="stickBase"><div id="stick"></div></div>
+  </div>
+
+  <footer>
+    <small>Cartoony 2.5D baseball — CPU pitches, closest fielder goes for the ball. Fouls are strikes; pitcher throws again on foul.</small>
+  </footer>
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>
