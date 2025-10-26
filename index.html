@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Baseball Nine v4 — MLB x Doodle Edition</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="container">
+  <header>
+    <h1>Baseball Nine — MLB × Doodle Edition</h1>
+    <div id="hud">
+      <div id="score">0 - 0</div>
+      <div id="inning">Inning: 1 (Top)</div>
+      <div id="outs">Outs: 0</div>
+      <div id="strikes">Strikes: 0</div>
+    </div>
+  </header>
+
+  <main>
+    <canvas id="canvas" width="1200" height="700" aria-label="Baseball field"></canvas>
+
+    <aside id="controls">
+      <div class="panel">
+        <label>Mode</label>
+        <select id="mode">
+          <option value="game">Full Game</option>
+          <option value="hr">Home Run Derby</option>
+        </select>
+      </div>
+
+      <div class="panel">
+        <button id="start">Start</button>
+        <button id="reset">Reset</button>
+      </div>
+
+      <div class="panel" id="game-log"></div>
+    </aside>
+  </main>
+
+  <div id="ui-controls">
+    <div id="joystick">
+      <div id="stickBase"><div id="stick"></div></div>
+    </div>
+
+    <div id="hit-area">
+      <button id="hit" aria-label="Hit button">HIT</button>
+    </div>
+  </div>
+
+  <footer>
+    <small>Made to feel like a Google Doodle × MLB collab — original art and code. No external assets.</small>
+  </footer>
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>
