@@ -1,0 +1,14 @@
+*{box-sizing:border-box;font-family:Inter, system-ui, Arial, sans-serif}
+body{margin:0;background:#0b3d91;color:#fff;display:flex;align-items:center;justify-content:center;min-height:100vh}
+#game{width:95%;max-width:1100px}
+header{display:flex;align-items:center;justify-content:space-between}
+h1{margin:.2rem 0}
+#controls button{margin-left:8px;padding:.4rem .7rem;border-radius:6px;border:0;background:#ffd166;color:#000;font-weight:700;cursor:pointer}
+#controls button:disabled{opacity:.4}
+main{display:flex;gap:12px;margin-top:12px}
+#field{background:linear-gradient(#2c9d59,#1f7d46);border-radius:8px;flex:1;box-shadow:0 6px 18px rgba(0,0,0,.4)}
+#log{width:240px;background:rgba(255,255,255,0.06);padding:8px;border-radius:8px;max-height:500px;overflow:auto}
+footer{margin-top:10px;text-align:center;color:#dbeafe}
+#info{display:flex;gap:12px;align-items:center}
+#info div{background:rgba(255,255,255,0.06);padding:6px 8px;border-radius:6px}
+canvas{width:100%;height:auto}
